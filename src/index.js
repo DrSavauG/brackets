@@ -5,17 +5,3 @@ module.exports = function check(str, bracketsConfig) {
     }
     return !str;
 };
-
-// // ////#region
-//  module.exports = function check(str, bracketsConfig) {
-//     const brackets = bracketsConfig.flatMap((item) => item.join(""));
-
-//     for (let index = 0; index < brackets.length; index++) {
-//         if (str.includes(brackets[index])) {
-//             str = str.replace(brackets[index], "");
-//             index = -1;
-//         }
-//     }
-
-//     return str === "";
-// };

@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
-    let brackets = bracketsConfig.map(item => item.join(""));
-    while (brackets.some(el => str.includes(el))) {
-        brackets.forEach(el => (str = str.replace(el, "")));
+    let brackets = bracketsConfig.map(e => e.join(""));
+    while (brackets.some(e => str.includes(e))) {
+        brackets.map(e => str = str.replace(e, ""));
     }
     return !str;
 };
